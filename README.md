@@ -1,4 +1,7 @@
+<img align="right" src="https://github.com/KavrakiLab/STAG_public/blob/main/logo/STAG_logo.png" width=25% height=25%>
+
 # STAG
+
 ## TCR-pMHC Binding Specificity Prediction from Structure Using Graph Neural Networks
 
 ## Usage
