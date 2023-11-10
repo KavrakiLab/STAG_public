@@ -86,22 +86,27 @@ def write_script(pdb, graph, grads, out_path, script_name):
     script_file.write(f'color grey80, chain {cn_[1]}\n')
     script_file.write(f'color grey80, chain {cn_[2]}\n')
     script_file.write(f'color grey80, chain {cn_[3]}\n')
-
+    pfactor = 1/max(p_node_grads)
+    bfactor = 1/max(b_node_grads)
+    afactor = 1/max(a_node_grads)
+    mfactor = 1/max(m_node_grads)
+    default = 1
+    factor = max((pfactor,bfactor,afactor,mfactor,default))
     # Update colors of peptide
     for i in range(len(p_aas)):
-        col = f'0x{color_scale[int(np.clip(p_node_grads[i],0,1) * 100)].get_hex_l()[1:]}'
+        col = f'0x{color_scale[int(np.clip(p_node_grads[i]*factor,0,1) * 100)].get_hex_l()[1:]}'
         script_file.write(f'color {col}, chain {cn_[0]} and resi {p_ids[i]}\n')
     # Update colors of MHC
     for i in range(len(m_aas)):
-        col = f'0x{color_scale[int(np.clip(m_node_grads[i],0,1) * 100)].get_hex_l()[1:]}'
+        col = f'0x{color_scale[int(np.clip(m_node_grads[i]*factor,0,1) * 100)].get_hex_l()[1:]}'
         script_file.write(f'color {col}, chain {cn_[1]} and resi {m_ids[i]}\n')
     # Update colors of TCR_A
     for i in range(len(a_aas)):
-        col = f'0x{color_scale[int(np.clip(a_node_grads[i],0,1) * 100)].get_hex_l()[1:]}'
+        col = f'0x{color_scale[int(np.clip(a_node_grads[i]*factor,0,1) * 100)].get_hex_l()[1:]}'
         script_file.write(f'color {col}, chain {cn_[2]} and resi {a_ids[i]}\n')
     # Update colors of TCR_B
     for i in range(len(b_aas)):
-        col = f'0x{color_scale[int(np.clip(b_node_grads[i],0,1) * 100)].get_hex_l()[1:]}'
+        col = f'0x{color_scale[int(np.clip(b_node_grads[i]*factor,0,1) * 100)].get_hex_l()[1:]}'
         script_file.write(f'color {col}, chain {cn_[3]} and resi {b_ids[i]}\n')
     script_file.close()
 
