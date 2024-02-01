@@ -2,7 +2,7 @@
 
 # STAG
 
-## TCR-pMHC Binding Specificity Prediction from Structure Using Graph Neural Networks
+##  **S**tructural **T**CR **A**nd pMHC binding specificity prediction **G**raph neural network
 
 ## Usage
 
