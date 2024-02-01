@@ -2,7 +2,7 @@
 
 # STAG
 
-##  *S*tructural *T*CR *A*nd pMHC binding specificity prediction *G*raph neural network
+## **S**tructural **T**CR **A**nd pMHC binding specificity prediction **G**raph neural network
 
 ## Usage
 
