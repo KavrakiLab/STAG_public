@@ -6,7 +6,7 @@
 
 ## Citations
 ```latex
-@ARTICLE{10819951,
+@ARTICLE{STAG,
   author={Slone, Jared K. and Conev, Anja and Rigo, Mauricio M. and Reuben, Alexandre and Kavraki, Lydia E.},
   journal={IEEE Transactions on Computational Biology and Bioinformatics}, 
   title={TCR-pMHC Binding Specificity Prediction from Structure Using Graph Neural Networks}, 
