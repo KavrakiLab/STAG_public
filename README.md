@@ -4,22 +4,6 @@
 
 ## **S**tructural **T**CR **A**nd pMHC binding specificity prediction **G**raph neural network
 
-## Citations
-```latex
-@ARTICLE{STAG,
-  author={Slone, Jared K. and Conev, Anja and Rigo, Mauricio M. and Reuben, Alexandre and Kavraki, Lydia E.},
-  journal={IEEE Transactions on Computational Biology and Bioinformatics}, 
-  title={TCR-pMHC Binding Specificity Prediction from Structure Using Graph Neural Networks}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={1-10},
-  keywords={Proteins;Three-dimensional displays;Peptides;Predictive models;Data models;Computational modeling;Amino acids;Accuracy;Graph neural networks;Benchmark testing;structural bioinformatics;immunology;geometric deep learning;TCR-pMHC},
-  doi={10.1109/TCBBIO.2024.3504235}}
-```
-
-
-
 ## Usage
 
 ### Evaluations
