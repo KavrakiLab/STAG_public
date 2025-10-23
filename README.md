@@ -97,3 +97,5 @@ utils.py                  - python file containg utils funcitons and variables u
 The datasts directories contain a csv detailing the attributes of each TCR-pMHC pair in the dataset and a `structures` sub-directory containng the modeled structures of each TRC-pMHC pair in the dataset. 
 All structues are saved as pdb files of the form `###.pdb` where `###` is the number cooresponding to that structure's index in the csv file. The chains in each PDB file are labeled **P** : *peptide*, **M** : *MHC*, **A** : *TCR α-chian*, **B** : TCR *β-chain*
 
+### Citation
+J. K. Slone, A. Conev, M. M. Rigo, A. Reuben and L. E. Kavraki, "TCR-pMHC Binding Specificity Prediction From Structure Using Graph Neural Networks," in IEEE Transactions on Computational Biology and Bioinformatics, vol. 22, no. 1, pp. 171-179, Jan.-Feb. 2025, doi: https://doi.org/10.1109/TCBBIO.2024.3504235
